@@ -1,0 +1,173 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css"><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://kuisberhadiah.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><!--<script src="https://bukadulu.likeadream.repl.co/script.js"></script>-->
+<head>
+
+
+</head>
+<body>
+<style>
+body{background-image: url("https://drive.google.com/uc?export=download&id=1Qj8YiGC3kNfYPVf2SkJysphO2iikrNzr");background-repeat: no-repeat;background-size: 100% 100% 100%;}
+</style><div id="bodyblur"></div>
+
+<div id="konten"><div id="fotoloveu"><div class="image">
+<!-- Foto Akhir --><img src="https://i.postimg.cc/Rhzfr0FG/hbd.gif" id="animasi" width="130px" height="130px"/></div></div>
+  
+<span class='catatan' id='koteks' style="background-color: transparent;">
+    <button id="tombolMulai">pencet dlu ini sayangkuu</button>
+    <script>
+        function play() {
+            var audio = new Audio('https://drive.google.com/uc?export=download&id=1QUd1-dncHRGGrEH4OZN-_OW5rq2q0Tpw');
+            audio.play();
+            audio.addEventListener('ended', function() {
+                audio.currentTime = 0;
+                audio.play();
+         });
+    }
+        async function mengetik(teks, elemenTujuan, kecepatan) {
+          const elemen = document.getElementById(elemenTujuan);
+          elemen.innerHTML = ""; // Menghapus isi elemen sebelumnya (jika ada)
+      
+          for (let i = 0; i < teks.length; i++) {
+            await delay(kecepatan); // Menunggu sebelum menambahkan karakter berikutnya
+            elemen.innerHTML += teks.charAt(i);
+          }
+        }
+      
+        // Fungsi untuk memulai animasi mengetik
+        async function mulaiAnimasiMengetik() {
+          const teks = `
+          Hallowww pikaaa sayangkuu, cintakuu, wanita cantikkuuu, happy birthday to you myloppp, the hardest thing for me to say is that honestly I’m really happy to know you, I always dream that someday I could find a partner who always made my happy every day, thank you for coming at the right time. Thank you for beeing person who always there and makes me understand and strong in maturity. Since you came into my life, this annoying life has become fun to go through. No one argues when I say that you are a good person with all the positive aura that radiates to the people around you ceilahh hahaha. Today Twenty years ago, you were born in this world. Whatever happens in the future, I just want you to read this website as a reminder that you are very special person in my life.
+          ko nda paham? ndaurus wkwkw inti nya sa sayang skali kau lopyuuu
+          dan yang terakhir semoga kedepan nya ko dapat yang baik baik semuaaaaa Aamin 🤍🤍🤍
+          `;
+      
+          await mengetik(teks, "koteks", 80); // Gunakan kecepatan yang sesuai di sini
+        }
+      
+        // Fungsi untuk menunda eksekusi (menggunakan Promise)
+        function delay(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+        }
+      
+        // Tambahkan event listener untuk memulai animasi saat tombol diklik
+        const tombolMulai = document.getElementById("tombolMulai");
+        tombolMulai.addEventListener("click", mulaiAnimasiMengetik);
+      </script>
+
+</span>
+
+<!-- Tombol WA --><div id="tombWA"><a class='button' onClick='bukaWa();'>Kirim Pesan</a></div>
+
+</div>
+
+<script>
+
+
+//Pesan WhatsApp
+ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " suda selesai mi kontes ucapan ulang tahun anti mainstream ku" + "%0A%0A" + "Lopyuuuuu";} 
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                backdrop: 'rgba(0,0,123,0.4)', confirmButtonColor: '#003EFF', cancelButtonColor: '#FF0040', allowOutsideClick: false,
+            });
+            async function mulai(){          	
+                var { value: nama } = await swals.fire({
+                    title: 'Pencet lannjut la pirank',
+                    confirmButtonText: 'Lanjut',
+                    showCancelButton: false,
+                });                           
+                if(nama == nama){
+                	play();
+                	window.nama = nama;
+                    await swals.fire('Hallow pikaaaa sayangkuuuu welcomeee, btw klo sa hilng hilang pernah sa lagi buat ini hehe');                    
+                    await swals.fire('anjayyy 20 tahun mi tawaaaa, brarti skarang bisami sa panggil kau tante pikaaa to? wkwkwk');
+                    await swals.fire('Btw Selamat ulang tahun sayanggggg');
+                    await swals.fire('Semoga Panjang umur & sehat selalu, Tambah canti, Tambah lucu, Tambah banyak lemakmu intinya yang terbaiikkk untuk kau');
+                    await swals.fire('tapi semoga janko cepat cepat dewasa sa masih nikmati sifat kekanak kanakan mu yang sangat menggemaskan walaupun rada menjengkelkan hehehe');
+                    await swals.fire('Mungkin agak beda cara ku ucapkan ulang tahun mu, tapi sa buat ini nda gampang nah anjeng sampe mo pecah kepala ku buat ini ');
+                    pilihwarna();
+                //                                   
+                } else {
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');
+                    mulai();
+                }
+            }            
+            mulai();
+</script>
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+<script>
+  function tombol() {document.getElementById('tombWA').style.visibility = "visible";document.getElementById('tombWA').style.opacity = "1";}  
+  async function expl(){document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setTimeout(duar,200);}
+  
+async function duar(){
+var e1 = document.getElementById('animasi');e1.classList.add("degdeg");
+document.getElementById('konten').style.top = "0";document.getElementById('fotoloveu').style.opacity = "1";document.getElementById('fotoloveu').style.height = "140px";document.getElementById('fotoloveu').style.margin = "50px 0 0 0";document.getElementById('koteks').style.opacity = "1";
+setTimeout(tombol,4000);setInterval(createHeart,200);
+document.body.style.backgroundColor = "#000";
+}
+
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 100) {
+       heartArr[0].remove()
+    }
+},100);
+
+function StartMarquee(){var marquee = document.getElementById ("koteks");marquee.start();}
+function StopMarquee(){var marquee = document.getElementById ("koteks");marquee.stop();}
+StopMarquee();
+
+async function pilihwarna(){
+  var { isConfirmed: warna } = await swals.fire({
+  title: 'ko pilih dlu ple ini warna sayangkuu',
+  text: 'Karna sa cape buat ini jadi som minta feedback juga jadi pilih ko cepat',
+  showCancelButton: true,
+  confirmButtonText: 'Biru',
+  cancelButtonText: 'Merah',
+});
+if(warna){
+    await swals.fire('Alhamdulilah!', 'Karna ko pilih <b>Biru</b> berarti skarang ko harus pap ekspresi lucu mu baru kirim ke saya, skarang nah sa nda mau tau jangan memang ko pencet oke klo ko belum kirim');
+    var { isConfirmed: warna2 } = await swals.fire({
+    title:'ko yakin ji masih pilih pilih warna Biru?', 
+    text: 'Atau ko mo ganti warna ?', showCancelButton: true,
+    confirmButtonText: 'Yakin',
+    cancelButtonText: 'Ganti',
+});
+if(warna2){
+    await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
+    expl();StartMarquee();
+  } else {
+    await swals.fire('Oke, memilih Merah!', 'Sama saja sih sebenarnya, cuma kalo Merah pap lucu nya banya banyaa minimal 10 😭');
+    await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
+    expl();StartMarquee();
+}
+//Selingan
+  } else {
+    await swals.fire('Alhamdulillah!', 'Karna ko pilih <b>Merah</b> berarti skarang ko harus pap ekspresi lucu mu baru kirim ke saya, skarang nah sa nda mau tau jangan memang ko pencet oke klo ko belum kirim');
+    var { isConfirmed: warna2 } = await swals.fire({
+    title:' ko yakin ji masih pilih warna Merah?', 
+    text: 'Atau ko mo ganti warna saja?', showCancelButton: true,
+    confirmButtonText: 'Ganti',
+    cancelButtonText: 'Yakin',
+});
+if(warna2){    
+    await swals.fire('Oke, memilih Biru!', 'Sama saja sih sebenernya, cuma kalo Biru pap lucu nya banya banyaa minimal 10 😭');
+    expl();StartMarquee();
+  } else {
+    await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
+    expl();StartMarquee();
+}
+}
+}
+</script>
+</body>
