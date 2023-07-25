@@ -74,19 +74,20 @@ body{background-image: url("https://drive.google.com/uc?export=download&id=1Qj8Y
             });
             async function mulai(){          	
                 var { value: nama } = await swals.fire({
-                    title: 'Pencet lannjut la pirank',
-                    confirmButtonText: 'Lanjut',
+                    title: 'Selamat datang di mahakarya ku yang sa dedikasikan untuk kau sayanggww ceilah hahaha',
+                    confirmButtonText: 'Pencet iniii',
                     showCancelButton: false,
                 });                           
                 if(nama == nama){
                 	play();
                 	window.nama = nama;
-                    await swals.fire('Hallow pikaaaa sayangkuuuu welcomeee, btw klo sa hilng hilang pernah sa lagi buat ini hehe');                    
-                    await swals.fire('anjayyy 20 tahun mi tawaaaa, brarti skarang bisami sa panggil kau tante pikaaa to? wkwkwk');
+                    await swals.fire('Whos birthday today? yapp! pikakuuu ultah hari iniii, happpy birthday sayangg');                    
+                    await swals.fire('sebenarnya som buat  jurnal tapi karna ko suda tau jadi sa buat saja ini, tapi lebih susah ini anjeng');
                     await swals.fire('Btw Selamat ulang tahun sayanggggg');
-                    await swals.fire('Semoga Panjang umur & sehat selalu, Tambah canti, Tambah lucu, Tambah banyak lemakmu intinya yang terbaiikkk untuk kau');
+                    await swals.fire('Semoga Panjang umur & sehat selalu, Tambah canti, Tambah lucu, tambah banya rejeki nya intinya yang terbaiikkk untuk kau');
                     await swals.fire('tapi semoga janko cepat cepat dewasa sa masih nikmati sifat kekanak kanakan mu yang sangat menggemaskan walaupun rada menjengkelkan hehehe');
-                    await swals.fire('Mungkin agak beda cara ku ucapkan ulang tahun mu, tapi sa buat ini nda gampang nah anjeng sampe mo pecah kepala ku buat ini ');
+                    await swals.fire('sa mo bilang juga jangan pernah ko berpikir sa mo tinggalkan kau karna tingkah mu yang rada absurd, sa akan selalu jadi support system mu yang 100000000% baik untuk kau, alwayss healthy dan wish u all the best');
+                    await swals.fire('sama sa mo berterimakasih banyak sama kau karna ko sudah mau jalani hari hari saama saya walaupun hampir tiap hari kita bertengkar trus. ailopyuu, im lucky to have u, dan sa akan slalu disini untuk kauuu');
                     pilihwarna();
                 //                                   
                 } else {
@@ -136,7 +137,7 @@ async function pilihwarna(){
   cancelButtonText: 'Merah',
 });
 if(warna){
-    await swals.fire('Alhamdulilah!', 'Karna ko pilih <b>Biru</b> berarti skarang ko harus pap ekspresi lucu mu baru kirim ke saya, skarang nah sa nda mau tau jangan memang ko pencet oke klo ko belum kirim');
+    await swals.fire('Alhamdulilah!', 'Karna ko pilih <b>Biru</b> berarti sebentar habis ko kasih selesai ini ko harus pap ekspresi lucu mu baru kirim ke saya, wajibb ini nah sa nda mau tau!');
     var { isConfirmed: warna2 } = await swals.fire({
     title:'ko yakin ji masih pilih pilih warna Biru?', 
     text: 'Atau ko mo ganti warna ?', showCancelButton: true,
@@ -147,13 +148,13 @@ if(warna2){
     await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
     expl();StartMarquee();
   } else {
-    await swals.fire('Oke, memilih Merah!', 'Sama saja sih sebenarnya, cuma kalo Merah pap lucu nya banya banyaa minimal 10 😭');
+    await swals.fire('Oke, memilih Merah!', 'Sama saja sih sebenernya, cuma kalo Biru pap lucu nya banya banyaa minimal 10 atau ndak vlog ka 😭');
     await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
     expl();StartMarquee();
 }
 //Selingan
   } else {
-    await swals.fire('Alhamdulillah!', 'Karna ko pilih <b>Merah</b> berarti skarang ko harus pap ekspresi lucu mu baru kirim ke saya, skarang nah sa nda mau tau jangan memang ko pencet oke klo ko belum kirim');
+    await swals.fire('Alhamdulillah!', 'Karna ko pilih <b>Merah</b> berarti sebentar habis ko kasih selesai ini ko harus pap ekspresi lucu mu baru kirim ke saya, wajibb ini nah sa nda mau tau!');
     var { isConfirmed: warna2 } = await swals.fire({
     title:' ko yakin ji masih pilih warna Merah?', 
     text: 'Atau ko mo ganti warna saja?', showCancelButton: true,
@@ -161,7 +162,7 @@ if(warna2){
     cancelButtonText: 'Yakin',
 });
 if(warna2){    
-    await swals.fire('Oke, memilih Biru!', 'Sama saja sih sebenernya, cuma kalo Biru pap lucu nya banya banyaa minimal 10 😭');
+    await swals.fire('Oke, memilih Biru!', 'Sama saja sih sebenernya, cuma kalo Biru pap lucu nya banya banyaa minimal 10 atau ndak vlog ka 😭');
     expl();StartMarquee();
   } else {
     await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
