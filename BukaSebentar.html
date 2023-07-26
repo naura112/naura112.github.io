@@ -23,35 +23,51 @@ body{background-image: url("https://drive.google.com/uc?export=download&id=1Qj8Y
                 audio.play();
          });
     }
-        async function mengetik(teks, elemenTujuan, kecepatan) {
-          const elemen = document.getElementById(elemenTujuan);
-          elemen.innerHTML = ""; // Menghapus isi elemen sebelumnya (jika ada)
-      
-          for (let i = 0; i < teks.length; i++) {
-            await delay(kecepatan); // Menunggu sebelum menambahkan karakter berikutnya
-            elemen.innerHTML += teks.charAt(i);
-          }
-        }
-      
-        // Fungsi untuk memulai animasi mengetik
-        async function mulaiAnimasiMengetik() {
-          const teks = `
-          Hallowww pikaaa sayangkuu, cintakuu, wanita cantikkuuu, happy birthday to you myloppp, the hardest thing for me to say is that honestly I’m really happy to know you, I always dream that someday I could find a partner who always made my happy every day, thank you for coming at the right time. Thank you for beeing person who always there and makes me understand and strong in maturity. Since you came into my life, this annoying life has become fun to go through. No one argues when I say that you are a good person with all the positive aura that radiates to the people around you ceilahh hahaha. Today Twenty years ago, you were born in this world. Whatever happens in the future, I just want you to read this website as a reminder that you are very special person in my life.
+   async function mengetik(teks, elemenTujuan, kecepatan) {
+      const elemen = document.getElementById(elemenTujuan);
+      elemen.innerHTML = ""; // Menghapus isi elemen sebelumnya (jika ada)
+
+      // Tambahkan elemen audio untuk efek suara
+      const audio = new Audio("https://drive.google.com/uc?export=download&id=1LVsXCPegMX2fy0W00FGnBETsyL0jTrKR");
+      audio.play(); // Memutar efek suara
+
+      for (let i = 0; i < teks.length; i++) {
+        await delay(kecepatan); // Menunggu sebelum menambahkan karakter berikutnya
+        elemen.innerHTML += teks.charAt(i);
+      }
+
+      // Hentikan suara efek setelah animasi selesai
+      audio.pause();
+      audio.currentTime = 0;
+    }
+
+    // Fungsi untuk memulai animasi mengetik
+    async function mulaiAnimasiMengetik() {
+      const tombolMulai = document.getElementById("tombolMulai");
+      tombolMulai.removeEventListener("click", mulaiAnimasiMengetik); // Menghapus event listener tombol
+
+      const teks = ` Hallowww pikaaa sayangkuu, cintakuu, wanita cantikkuuu, happy birthday to you myloppp, the hardest thing for me to say is that honestly I’m really happy to know you, I always dream that someday I could find a partner who always made my happy every day, thank you for coming at the right time. Thank you for beeing person who always there and makes me understand and strong in maturity. Since you came into my life, this annoying life has become fun to go through. No one argues when I say that you are a good person with all the positive aura that radiates to the people around you ceilahh hahaha. Today Twenty years ago, you were born in this world. Whatever happens in the future, I just want you to read this website as a reminder that you are very special person in my life.
           ko nda paham? ndaurus wkwkw inti nya sa sayang skali kau lopyuuu
           dan yang terakhir semoga kedepan nya ko dapat yang baik baik semuaaaaa Aamin 🤍🤍🤍
-          `;
-      
-          await mengetik(teks, "koteks", 80); // Gunakan kecepatan yang sesuai di sini
-        }
-      
-        // Fungsi untuk menunda eksekusi (menggunakan Promise)
-        function delay(ms) {
-          return new Promise(resolve => setTimeout(resolve, ms));
-        }
-      
-        // Tambahkan event listener untuk memulai animasi saat tombol diklik
-        const tombolMulai = document.getElementById("tombolMulai");
-        tombolMulai.addEventListener("click", mulaiAnimasiMengetik);
+          `; // Teks yang akan ditampilkan`
+      const elemenTujuan = "koteks";
+      const kecepatan = 80;
+
+      await mengetik(teks, elemenTujuan, kecepatan); // Gunakan kecepatan yang sesuai di sini
+
+      // Hapus elemen audio setelah animasi selesai
+      const audio = document.getElementById("audio");
+      audio.remove();
+    }
+
+    // Fungsi untuk menunda eksekusi (menggunakan Promise)
+    function delay(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // Tambahkan event listener untuk memulai animasi saat tombol diklik
+    const tombolMulai = document.getElementById("tombolMulai");
+    tombolMulai.addEventListener("click", mulaiAnimasiMengetik);
       </script>
 
 </span>
