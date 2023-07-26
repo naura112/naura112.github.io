@@ -16,7 +16,7 @@ body{background-image: url("https://drive.google.com/uc?export=download&id=1Qj8Y
     <button id="tombolMulai">pencet dlu ini sayangkuu</button>
     <script>
         function play() {
-            var audio = new Audio('https://drive.google.com/uc?export=download&id=1QUd1-dncHRGGrEH4OZN-_OW5rq2q0Tpw');
+            var audio = new Audio('https://drive.google.com/uc?export=download&id=1Ksobdt1dH_hnBm4GAfZqwVposhQRHKTZ');
             audio.play();
             audio.addEventListener('ended', function() {
                 audio.currentTime = 0;
@@ -74,20 +74,21 @@ body{background-image: url("https://drive.google.com/uc?export=download&id=1Qj8Y
             });
             async function mulai(){          	
                 var { value: nama } = await swals.fire({
-                    title: 'Selamat datang di mahakarya ku yang sa dedikasikan untuk kau sayanggww ceilah hahaha',
+                    title: 'ini adalah salah satu effort ku selain sendal kodok!',
                     confirmButtonText: 'Pencet iniii',
                     showCancelButton: false,
                 });                           
                 if(nama == nama){
                 	play();
                 	window.nama = nama;
-                    await swals.fire('Whos birthday today? yapp! pikakuuu ultah hari iniii, happpy birthday sayangg');                    
-                    await swals.fire('sebenarnya som buat  jurnal tapi karna ko suda tau jadi sa buat saja ini, tapi lebih susah ini anjeng');
+                    await swals.fire('yeyyy pikakuuu ultah hari iniii, happpy birthday sayangg');                    
+                    await swals.fire('mungkin agak beda caraku ucapkan ultah mu karna sa rasa kau bukan orang biasa yang harus diucapkan juga secara biasa jadi sa buat ini berminggu minggu untuk kau');
+                    await swals.fire('jadi kalau biasa sa hilang hilang sa lagi buat ini ksian');
                     await swals.fire('Btw Selamat ulang tahun sayanggggg');
                     await swals.fire('Semoga Panjang umur & sehat selalu, Tambah canti, Tambah lucu, tambah banya rejeki nya intinya yang terbaiikkk untuk kau');
                     await swals.fire('tapi semoga janko cepat cepat dewasa sa masih nikmati sifat kekanak kanakan mu yang sangat menggemaskan walaupun rada menjengkelkan hehehe');
-                    await swals.fire('sa mo bilang juga jangan pernah ko berpikir sa mo tinggalkan kau karna tingkah mu yang rada absurd, sa akan selalu jadi support system mu yang 100000000% baik untuk kau, alwayss healthy dan wish u all the best');
-                    await swals.fire('sama sa mo berterimakasih banyak sama kau karna ko sudah mau jalani hari hari saama saya walaupun hampir tiap hari kita bertengkar trus. ailopyuu, im lucky to have u, dan sa akan slalu disini untuk kauuu');
+                    await swals.fire('sa mo bilang juga jangan pernah ko berpikir sa mo tinggalkan kau karena tingkah mu yang rada absurd, sa akan selalu jadi support system mu yang 100000000% baik untuk kau, alwayss healthy dan wish u all the best');
+                    await swals.fire('sama sa mo berterimakasih banyak sama kau karna ko sudah mau jalani hari hari sama saya walaupun hampir tiap hari kita bertengkar trus. ailopyuu, sa bersyukur skali dapat kau, dan sa akan slalu disini untuk kauuu');
                     pilihwarna();
                 //                                   
                 } else {
@@ -130,14 +131,14 @@ StopMarquee();
 
 async function pilihwarna(){
   var { isConfirmed: warna } = await swals.fire({
-  title: 'ko pilih dlu ple ini warna sayangkuu',
-  text: 'Karna sa cape buat ini jadi som minta feedback juga jadi pilih ko cepat',
+  title: 'ko pilih dlu ple ini warnaa',
+  text: 'Karna sa cape buat ini jadi som minta feedback juga jadi pilih cepaaa',
   showCancelButton: true,
   confirmButtonText: 'Biru',
   cancelButtonText: 'Merah',
 });
 if(warna){
-    await swals.fire('Alhamdulilah!', 'Karna ko pilih <b>Biru</b> berarti sebentar habis ko kasih selesai ini ko harus pap ekspresi lucu mu baru kirim ke saya, wajibb ini nah sa nda mau tau!');
+    await swals.fire('yey dapat pap lucu 😭', 'Karna ko pilih <b>Biru</b> berarti sebentar habis ko kasih selesai ini ko harus pap ekspresi lucu mu baru kirim ke saya, awas memang ko nda kirim!');
     var { isConfirmed: warna2 } = await swals.fire({
     title:'ko yakin ji masih pilih pilih warna Biru?', 
     text: 'Atau ko mo ganti warna ?', showCancelButton: true,
@@ -148,13 +149,13 @@ if(warna2){
     await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
     expl();StartMarquee();
   } else {
-    await swals.fire('Oke, memilih Merah!', 'Sama saja sih sebenernya, cuma kalo Biru pap lucu nya banya banyaa minimal 10 atau ndak vlog ka 😭');
+    await swals.fire('yey pap lucu nya dapat banyaa😭', 'Sama saja sih sebenernya, cuma kalo Biru pap lucu nya banya banyaaaa atau ndak vlog ka 😭');
     await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
     expl();StartMarquee();
 }
 //Selingan
   } else {
-    await swals.fire('Alhamdulillah!', 'Karna ko pilih <b>Merah</b> berarti sebentar habis ko kasih selesai ini ko harus pap ekspresi lucu mu baru kirim ke saya, wajibb ini nah sa nda mau tau!');
+    await swals.fire('yey dapat pap lucu 😭', 'Karna ko pilih <b>Merah</b> berarti sebentar habis ko kasih selesai ini ko harus pap ekspresi lucu mu baru kirim ke saya, wajibb ini awas memang ndadaa!');
     var { isConfirmed: warna2 } = await swals.fire({
     title:' ko yakin ji masih pilih warna Merah?', 
     text: 'Atau ko mo ganti warna saja?', showCancelButton: true,
@@ -162,7 +163,7 @@ if(warna2){
     cancelButtonText: 'Yakin',
 });
 if(warna2){    
-    await swals.fire('Oke, memilih Biru!', 'Sama saja sih sebenernya, cuma kalo Biru pap lucu nya banya banyaa minimal 10 atau ndak vlog ka 😭');
+    await swals.fire('yey pap lucu nya dapat banyaa😭', 'Sama saja sih sebenernya, cuma kalo Biru pap lucu nya banya banyaa minimal 10 atau ndak vlog ka 😭');
     expl();StartMarquee();
   } else {
     await swals.fire('Oke!', `ini ple yang terakhir ko baca bae bae, sengaja sa pake bahasa inggris spaya nda terlalu cringe hehehe`);
